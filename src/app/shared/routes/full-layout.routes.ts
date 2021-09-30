@@ -8,7 +8,7 @@ export const Full_ROUTES: Routes = [
     loadChildren: () => import('../../page/page.module').then(m => m.PageModule)
   },
   {
-    path: 'prueba',
+    path: 'calculator',
     loadChildren: () => import('../../prueba/prueba.module').then(m => m.PruebaModule)
   },
   {

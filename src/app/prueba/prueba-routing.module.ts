@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '',
     component: CalculadoraComponent,
     data: {
+      path: "calculator",
       title: 'Calculadora'
     }
     // children: [
