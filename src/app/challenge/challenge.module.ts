@@ -6,7 +6,9 @@ import { ImagesComponent } from './images/images.component';
 import { MediaPlayerComponent } from './media-player/media-player.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { QuillModule } from 'ngx-quill'
+import { QuillModule } from 'ngx-quill';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { DataTablesComponent } from './data-tables/data-tables.component';
 
 
 
@@ -14,7 +16,8 @@ import { QuillModule } from 'ngx-quill'
   declarations: [
     ImagesComponent,
     MediaPlayerComponent,
-    TextEditorComponent
+    TextEditorComponent,
+    DataTablesComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +26,8 @@ import { QuillModule } from 'ngx-quill'
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    QuillModule
+    QuillModule,
+    NgxDatatableModule 
   ]
 })
 export class ChallengeModule { }

@@ -1,0 +1,7 @@
+[
+    {"name": "Austin", "gender": "Male", "company": "Swimlane"},
+    {"name": "Claudie", "gender": "Female", "company": "McDonalds"},
+    {"name": "Megan", "gender": "Female", "company": "KFC"},
+    {"name": "David", "gender": "Male", "company": "EASports"},
+    {"name": "Steve", "gender": "Male", "company": "Nintendo"}
+]

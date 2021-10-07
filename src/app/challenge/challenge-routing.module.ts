@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DataTablesComponent } from './data-tables/data-tables.component';
 import { ImagesComponent } from './images/images.component';
 import { MediaPlayerComponent } from './media-player/media-player.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
@@ -32,6 +33,13 @@ const routes: Routes = [
         component: TextEditorComponent,
         data: {
           title: 'Text Editor'
+        }
+      },
+      {
+        path: 'data-tables',
+        component: DataTablesComponent,
+        data: {
+          title: 'Data Tables'
         }
       }
      ]

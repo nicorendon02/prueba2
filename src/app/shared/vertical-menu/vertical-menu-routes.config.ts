@@ -19,6 +19,9 @@ export const ROUTES: RouteInfo[] = [
       },
       {
         path: '/challenge/text-editor', title: 'Text Editor', icon: 'ft-edit', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+      },
+      {
+        path: '/challenge/data-tables', title: 'Data Tables', icon: 'ft-edit', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
       }
     ]
 },
