@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculadoraService } from './calculadora.service';
 
 
 @Component({
@@ -9,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class CalculadoraComponent implements OnInit {
 
   number:string = "";
-  constructor() { }
+  message:string = "";
+
+  constructor(private calculatorService:CalculadoraService) { }
 
   ngOnInit(): void {
   }
@@ -22,6 +25,7 @@ export class CalculadoraComponent implements OnInit {
   clean()
   {
     this.number = "";
+    this.message = "";
   }
 
   undo()
@@ -29,9 +33,15 @@ export class CalculadoraComponent implements OnInit {
     this.number = this.number.substr(0,this.number.length-1);
   }
 
+
   evalExpr()
   {
-    this.number = eval(this.number);
+    try{
+      this.message = "";
+      this.number = eval(this.number);
+    }
+    catch(Error){this.message = "Syntax Error"}
+    
   }
 
 }
