@@ -22,6 +22,9 @@ export const ROUTES: RouteInfo[] = [
       },
       {
         path: '/challenge/data-tables', title: 'Data Tables', icon: 'ft-edit', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+      },
+      {
+        path: '/challenge/org-chart', title: 'Organization Chart', icon: 'ft-edit', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
       }
     ]
 },

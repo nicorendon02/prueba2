@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DataTablesComponent } from './data-tables/data-tables.component';
 import { ImagesComponent } from './images/images.component';
 import { MediaPlayerComponent } from './media-player/media-player.component';
+import { OrgChartComponent } from './org-chart/org-chart.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 
 const routes: Routes = [
@@ -40,6 +41,14 @@ const routes: Routes = [
         component: DataTablesComponent,
         data: {
           title: 'Data Tables'
+        }
+      },
+      
+      {
+        path: 'org-chart',
+        component: OrgChartComponent,
+        data: {
+          title: 'Organization Chart'
         }
       }
      ]

@@ -9,15 +9,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QuillModule } from 'ngx-quill';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { DataTablesComponent } from './data-tables/data-tables.component';
-
-
+import { OrgChartComponent } from './org-chart/org-chart.component';
+import { OrganizationChartModule } from 'primeng/organizationchart';
 
 @NgModule({
   declarations: [
     ImagesComponent,
     MediaPlayerComponent,
     TextEditorComponent,
-    DataTablesComponent
+    DataTablesComponent,
+    OrgChartComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +28,8 @@ import { DataTablesComponent } from './data-tables/data-tables.component';
     VgOverlayPlayModule,
     VgBufferingModule,
     QuillModule,
-    NgxDatatableModule 
+    NgxDatatableModule,
+    OrganizationChartModule 
   ]
 })
 export class ChallengeModule { }
